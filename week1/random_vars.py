@@ -58,7 +58,6 @@ def exercise_probability_with_dice():
     print(prob_space_2)
 
 
-
 def main():
     print('=====================================')
     first_look()

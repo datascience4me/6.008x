@@ -43,6 +43,22 @@ def approach_2():
     print("Random variable I = " + str(I))
 
 
+def exercise_probability_with_dice():
+    print("Exercise: probability with dice")
+    prob_space = {1: 1 / 6, 2: 1 / 6, 3: 1 / 6, 4: 1 / 6, 5: 1 / 6, 6: 1 / 6}
+    prob_space_2 = {}
+    for key1, value1 in prob_space.items():
+        for key2, value2 in prob_space.items():
+            key = key1 + key2
+            if key in prob_space_2:
+                prob_space_2[key] += 1 / 36
+            else:
+                prob_space_2[key] = 1 / 36
+    print('Probability space is ' + str(len(prob_space_2)))
+    print(prob_space_2)
+
+
+
 def main():
     print('=====================================')
     first_look()
@@ -50,6 +66,8 @@ def main():
     approach_1()
     print('=====================================')
     approach_2()
+    print('=====================================')
+    exercise_probability_with_dice()
 
 
 if __name__ == "__main__":

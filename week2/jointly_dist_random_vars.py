@@ -5,7 +5,7 @@ Created on Sat Sep 24 12:23:46 2016
 @author: anton
 """
 
-import comp_prob_inference
+import week1.comp_prob_inference as comp_prob_inference
 import numpy as np
 
 

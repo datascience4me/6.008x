@@ -13,6 +13,9 @@ def main():
     prob_S_C_given_T_0 = np.array([[0.72, 0.08], [0.18, 0.02]])
     prob_S_C_given_T_1 = np.array([[0.08, 0.12], [0.32, 0.48]])
 
+    prob_s_c_given_T = prob_S_C_given_T_0 * prob_S_C_given_T_1
+    print(prob_s_c_given_T)
+
     t = {0: 0.5, 1: 0.5}
     print(t)
 

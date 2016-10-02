@@ -254,7 +254,6 @@ def compute_true_movie_rating_posterior_entropies(num_observations):
 
 
 def main():
-
     # -------------------------------------------------------------------------
     # ERROR CHECKS
     #
@@ -266,7 +265,7 @@ def main():
         [0.7, 0.98],
         [0.3, 0.02],
     ])
-    y = [0]*2 + [1]*1
+    y = [0] * 2 + [1] * 1
     print("My answer:")
     print(compute_posterior(prior, likelihood, y))
     print("Expected answer:")

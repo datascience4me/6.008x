@@ -49,7 +49,7 @@ def get_movie_name(movie_id):
     # ERROR CHECK
     #
     filename_to_check = "data/ratingsMovie%d.dat" % movie_id
-    if not(isfile(filename_to_check)):
+    if not (isfile(filename_to_check)):
         exit('Movie ID %d does not exist' % movie_id)
     #
     # END OF ERROR CHECK
@@ -84,7 +84,7 @@ def get_ratings(movie_id):
     # -------------------------------------------------------------------------
     # ERROR CHECK
     #
-    if not(isfile(filename)):
+    if not (isfile(filename)):
         exit('Movie ID %d does not exist' % movie_id)
     #
     # END OF ERROR CHECK
